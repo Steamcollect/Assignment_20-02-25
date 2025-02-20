@@ -36,4 +36,13 @@ public class CharacterStatisticsTest
 
         Assert.AreEqual(10, character.Intelligence);
     }
+
+    [Test]
+    public void Should_Set_Character_Weapon()
+    {
+        Weapon weapon = A.Weapon.WithName("Sword").WithStrengh(10);
+        Character character = A.Character.WithWeapon(weapon);
+
+        Assert.AreEqual(weapon, character.Weapon);
+    }
 }

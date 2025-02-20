@@ -9,11 +9,14 @@ public class Character
     public int Strength;
     public int Intelligence;
 
-    public Character (string name, int health, int strength, int intelligence)
+    public Weapon Weapon;
+
+    public Character (string name, int health, int strength, int intelligence, Weapon weapon)
     {
         Name = name;
         Health = health;
         Strength = strength;
         Intelligence = intelligence;
+        Weapon = weapon;
     }
 }
