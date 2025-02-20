@@ -8,7 +8,7 @@ public class CharacterStatisticsTest
     [Test]
     public void Should_Set_Character_Name()
     {
-        Character character = A.character.WithName("Bob");
+        Character character = A.Character.WithName("Bob");
 
         Assert.AreEqual("Bob", character.Name);
     }
@@ -16,7 +16,7 @@ public class CharacterStatisticsTest
     [Test]
     public void Should_Set_Character_Health()
     {
-        Character character = A.character.WithHealth(10);
+        Character character = A.Character.WithHealth(10);
 
         Assert.AreEqual(10, character.Health);
     }
@@ -24,7 +24,7 @@ public class CharacterStatisticsTest
     [Test]
     public void Should_Set_Character_Strengh()
     {
-        Character character = A.character.WithStrengh(10);
+        Character character = A.Character.WithStrengh(10);
 
         Assert.AreEqual(10, character.Strength);
     }
@@ -32,7 +32,7 @@ public class CharacterStatisticsTest
     [Test]
     public void Should_Set_Character_Intelligence()
     {
-        Character character = A.character.WithIntelligence(10);
+        Character character = A.Character.WithIntelligence(10);
 
         Assert.AreEqual(10, character.Intelligence);
     }

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public static class A
 {
-    public static Characterbuilder character = new Characterbuilder();
+    public static Characterbuilder Character = new Characterbuilder();
+    public static WeaponBuilder Weapon = new WeaponBuilder();
 }

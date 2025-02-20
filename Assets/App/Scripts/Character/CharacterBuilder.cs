@@ -34,8 +34,8 @@ public class Characterbuilder
         return new Character(Name, Health, Strengh, Intelligence);
     }
 
-    public static implicit operator Character(Characterbuilder characterbuilder)
+    public static implicit operator Character(Characterbuilder builder)
     {
-        return characterbuilder.Build();
+        return builder.Build();
     }
 }
