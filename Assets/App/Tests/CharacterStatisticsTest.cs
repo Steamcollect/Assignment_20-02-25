@@ -48,7 +48,7 @@ public class CharacterStatisticsTest
         character.Weapon = null;
         character.Buff = null;
         // Je suis obligé de set Weapon & Buff a NULL,
-        // Jsp pourquoi mais elle est gardé en mémoire avec un autre test et ça fait sauter ce test
+        // Jsp pourquoi mais elle est gardé en mémoire avec les tests precedents et ça fait sauter ce test
         // Si tu veux tester sans le WithWeapon, ça marchera si tu lance le test seul, mais pas si tu les run tous
 
         Assert.AreEqual(10, character.Attack());
