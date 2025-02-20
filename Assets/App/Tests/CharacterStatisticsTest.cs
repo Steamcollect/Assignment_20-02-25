@@ -45,12 +45,6 @@ public class CharacterStatisticsTest
     {
         Character character = A.Character.WithStrengh(10);
 
-        character.Weapon = null;
-        character.Buff = null;
-        // Je suis obligé de set Weapon & Buff a NULL,
-        // Jsp pourquoi mais elle est gardé en mémoire avec les tests precedents et ça fait sauter ce test
-        // Si tu veux tester sans le WithWeapon, ça marchera si tu lance le test seul, mais pas si tu les run tous
-
         Assert.AreEqual(10, character.Attack());
     }
 
@@ -70,8 +64,6 @@ public class CharacterStatisticsTest
         Weapon weapon = A.Weapon.WithName("Sword").WithStrengh(10);
 
         Character character = A.Character.WithStrengh(10).WithWeapon(weapon);
-        
-        character.Buff = null;
 
         Assert.AreEqual(20, character.Attack());
     }
@@ -93,8 +85,6 @@ public class CharacterStatisticsTest
         Buff buff = A.Buff.WithStrengh(10);
         Character character = A.Character.WithStrengh(10).WithBuff(buff);
 
-        character.Weapon = null;
-
         Assert.AreEqual(20, character.Attack());
     }
     
@@ -103,8 +93,6 @@ public class CharacterStatisticsTest
     {
         Buff buff = A.Buff.WithStrengh(10).WithRemainingRound(1);
         Character character = A.Character.WithStrengh(10).WithBuff(buff);
-
-        character.Weapon = null;
 
         for (int i = 0; i < 2; i++)
         {
