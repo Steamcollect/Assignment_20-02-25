@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
-public class WeaponStatisticsTest : MonoBehaviour
+public class WeaponStatisticsTest
 {
     [Test]
     public void Should_Set_Weapon_Name()

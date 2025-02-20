@@ -6,6 +6,7 @@ public class Characterbuilder
     int Intelligence;
 
     Weapon Weapon;
+    Buff Buff;
 
     public Characterbuilder WithName(string name)
     {
@@ -37,9 +38,15 @@ public class Characterbuilder
         return this;
     }
 
+    public Characterbuilder WithBuff(Buff buff)
+    {
+        Buff = buff;
+        return this;
+    }
+
     public Character Build()
     {
-        return new Character(Name, Health, Strengh, Intelligence, Weapon);
+        return new Character(Name, Health, Strengh, Intelligence, Weapon, Buff);
     }
 
     public static implicit operator Character(Characterbuilder builder)
